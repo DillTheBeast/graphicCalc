@@ -19,7 +19,8 @@ public class Controller {
 
     @FXML
     private Button multiplication;
-
+/. mazsHUJIK
++
     @FXML
     private Button division;
 
@@ -37,5 +38,5 @@ public class Controller {
         String javafxVersion = System.getProperty("javafx.version");
         label.setText("Hello, JavaFX " + javafxVersion + "\nRunning on Java " + javaVersion + ".");
     }
-    
-}
+
+}]=-0987654321`
