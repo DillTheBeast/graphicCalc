@@ -107,6 +107,7 @@ public class Controller {
     } 
     void updateoutputField() {
         outputField.setText(currentNum);
+        calculationStack.setText(previousNum + operation + currentNum);
     }
 
     @FXML

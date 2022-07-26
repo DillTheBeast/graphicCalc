@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calc.Controller">
    <children>
-      <TextField fx:id="outputField" layoutX="7.0" layoutY="40.0" prefHeight="138.0" prefWidth="284.0">
+      <TextField fx:id="outputField" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="7.0" layoutY="40.0" prefHeight="138.0" prefWidth="284.0">
          <font>
             <Font size="65.0" />
          </font>
