@@ -4,24 +4,110 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calc.Controller">
    <children>
-      <Button fx:id="addition" layoutX="31.0" layoutY="26.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="106.0" text="Addition" />
-      <Button fx:id="subtraction" layoutX="176.0" layoutY="26.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="106.0" text="Subtraction" />
-      <Button fx:id="multiplication" layoutX="322.0" layoutY="26.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="106.0" text="Multiplication" />
-      <Button fx:id="division" layoutX="469.0" layoutY="26.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="106.0" text="Division" />
-      <TextField fx:id="num1" layoutX="212.0" layoutY="144.0" prefHeight="56.0" prefWidth="176.0" />
-      <Label alignment="CENTER" layoutX="54.0" layoutY="149.0" prefHeight="47.0" prefWidth="139.0" text="Number 1" />
-      <Label alignment="CENTER" layoutX="54.0" layoutY="214.0" prefHeight="47.0" prefWidth="139.0" text="Number 2" />
-      <TextField fx:id="num2" layoutX="212.0" layoutY="210.0" prefHeight="56.0" prefWidth="176.0" />
-      <Label alignment="CENTER" layoutX="33.0" layoutY="273.0" prefHeight="87.0" prefWidth="182.0" text="Answer">
+      <TextField fx:id="outputField" layoutX="7.0" layoutY="40.0" prefHeight="138.0" prefWidth="284.0">
          <font>
-            <Font size="22.0" />
+            <Font size="65.0" />
          </font>
-      </Label>
-      <TextField fx:id="answer" layoutX="212.0" layoutY="289.0" prefHeight="56.0" prefWidth="176.0" />
+      </TextField>
+      <Label fx:id="calculationStack" layoutX="7.0" layoutY="6.0" prefHeight="34.0" prefWidth="284.0" />
+      <FlowPane layoutX="7.0" layoutY="184.0" prefHeight="351.0" prefWidth="284.0">
+         <children>
+            <Button fx:id="zeroButton" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="84.0" prefWidth="94.0" text="0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="oneButton" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="84.0" prefWidth="94.0" text="1">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="twoButton" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="84.0" prefWidth="94.0" text="2">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="threeButton" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="84.0" prefWidth="94.0" text="3">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="fourButton" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="84.0" prefWidth="94.0" text="4">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="fiveButton" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="84.0" prefWidth="94.0" text="5">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="sixButton" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="84.0" prefWidth="94.0" text="6">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="sevenButton" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="84.0" prefWidth="94.0" text="7">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="eightButton" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="84.0" prefWidth="94.0" text="8">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="nineButtpn" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="84.0" prefWidth="94.0" text="9">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="decimalButton" mnemonicParsing="false" onAction="#onDecimalClick" prefHeight="84.0" prefWidth="94.0" text=".">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+      <VBox layoutX="301.0" layoutY="33.0" prefHeight="540.0" prefWidth="123.0">
+         <children>
+            <Button fx:id="additionButton" mnemonicParsing="false" onAction="#onOperationClick" prefHeight="108.0" prefWidth="127.0" text="+">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="subtractionButton" mnemonicParsing="false" onAction="#onOperationClick" prefHeight="108.0" prefWidth="127.0" text="-">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="multiplicationButton" mnemonicParsing="false" onAction="#onOperationClick" prefHeight="108.0" prefWidth="127.0" text="x">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="divisionButton" mnemonicParsing="false" onAction="#onOperationClick" prefHeight="108.0" prefWidth="127.0" text="/">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button fx:id="equalsButton" mnemonicParsing="false" onAction="#onEqualsClick" prefHeight="108.0" prefWidth="127.0" text="=">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="clearButton" layoutX="14.0" layoutY="531.0" mnemonicParsing="false" onAction="#onClearButton" prefHeight="55.0" prefWidth="275.0" text="CLEAR">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
