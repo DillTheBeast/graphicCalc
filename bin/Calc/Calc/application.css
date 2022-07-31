@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+*{
+    -fx-font-family: 'Bungee', cursive;
+    -fx-font-size: 25;
+}
+.button{
+    -fx-border-color: #000000;
+    -fx-border-width: 1;
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #969696, #ffffff);
+
+}
+#outputField{
+    -fx-border-color: #000000;
+    -fx-border-width: 1;
+}
