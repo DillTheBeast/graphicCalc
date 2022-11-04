@@ -15,7 +15,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("Calc/calc.fxml"));
         primaryStage.setTitle("Calculator");
         primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("Calc/icon.png")));
-        Scene scene = new Scene(root, 800, 800);
+        Scene scene = new Scene(root, 438, 601);
         scene.getStylesheets().add(getClass().getResource("Calc/application.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();
